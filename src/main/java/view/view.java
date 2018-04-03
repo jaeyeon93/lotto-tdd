@@ -1,5 +1,6 @@
 package view;
 
+import lotto.Lotto;
 import lotto.LottoGame;
 
 import java.util.List;
@@ -10,8 +11,9 @@ public class view {
         System.out.println(num + "개를 구매했습니다.");
     }
 
-    public static void resultView(List<Integer> counts) {
+    public static void resultView(List<Lotto> lottos, Lotto winningNumber) {
         LottoGame game = new LottoGame();
+        List<Integer> counts = game.match(lottos, winningNumber);
         System.out.println("당첨통계");
         System.out.println("---------");
         System.out.println("3개 일치 (5000원) - " + game.getCount(counts, 3) + "개");

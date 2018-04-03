@@ -11,6 +11,6 @@ public class Run {
         BuyLotto buy = new BuyLotto(inputMoney);
         view.showNumbers(inputMoney);
         Lotto winningNumber = InputWinning.winningInput();
-        view.resultView(LottoGame.counts);
+        view.resultView(buy.getLottos() ,winningNumber);
     }
 }
