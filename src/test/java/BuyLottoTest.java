@@ -9,6 +9,5 @@ public class BuyLottoTest {
         BuyLotto buy = new BuyLotto(inputMoney);
         int num = buy.getLottos().size();
         assertEquals(14, num);
-
     }
 }

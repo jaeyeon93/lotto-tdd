@@ -9,8 +9,11 @@ public class BuyLotto {
     public BuyLotto(int inputMoney) {
         lottos = new ArrayList<>();
         int num = inputMoney / 1000;
-        for(int i = 0; i < num; i++)
-            lottos.add(new Lotto());
+        for(int i = 0; i < num; i++) {
+            Lotto lotto = new Lotto();
+            lottos.add(lotto);
+            System.out.println(lotto.getLotto());
+        }
     }
 
     public List<Lotto> getLottos() {

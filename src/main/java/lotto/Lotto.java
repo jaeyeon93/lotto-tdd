@@ -40,4 +40,5 @@ public class Lotto {
     public List<Integer> getLotto() {
         return lotto;
     }
+
 }
